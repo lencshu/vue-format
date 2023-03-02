@@ -2,7 +2,7 @@
     "name": "vue-format",
     "displayName": "vue-format",
     "description": "A beautify extension for .vue file",
-    "version": "0.1.8",
+    "version": "0.2.0",
     "publisher": "febean",
     "keyword": "vue vscode format js-beautify extension",
     "engines": {
@@ -13,7 +13,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.vueFormat"
+        "onLanguage:vue"
     ],
     "repository": {
         "type": "git",
@@ -85,8 +85,8 @@
         ],
         "keybindings": [
             {
-                "key": "ctrl+alt+p",
-                "mac": "cmd+ctrl+p",
+                "key": "ctrl+alt+e",
+                "mac": "cmd+ctrl+e",
                 "when": "editorTextFocus && !editorReadonly && editorLangId == vue",
                 "command": "extension.vueFormat"
             }
